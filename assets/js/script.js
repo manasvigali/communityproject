@@ -1,108 +1,102 @@
-// script.js
-(function(){
-  // small helpers
-  const id = (s) => document.getElementById(s);
-  const yearEls = ['year','year2','year3','year4'];
-  yearEls.forEach(y=>{const el = id(y); if(el) el.textContent = new Date().getFullYear();});
+// script.js - menu toggle, accessible quiz interactions, year update
 
-  // Menu toggle
-  const menuBtn = document.querySelector('.menu-btn');
-  const mainNav = document.getElementById('main-nav');
-  if(menuBtn && mainNav){
-    menuBtn.addEventListener('click', ()=>{
-      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-      menuBtn.setAttribute('aria-expanded', String(!expanded));
-      mainNav.classList.toggle('show');
+(function () {
+  'use strict';
+
+  // DOM helpers
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function $all(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
+
+  // Update footer year
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Mobile nav toggle (works on desktop when resized)
+  var menuBtn = $('.menu-btn');
+  var mainNav = $('#main-nav');
+  if (menuBtn && mainNav) {
+    menuBtn.addEventListener('click', function () {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      mainNav.classList.toggle('show', !expanded);
     });
-  }
 
-  // Quiz logic
-  const quizContainer = id('quiz-container');
-  const quizResult = id('quiz-result');
-  const restartBtn = id('restart');
+    // close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mainNav.classList.remove('show');
+        menuBtn.focus();
+      }
+    });
 
-  const questions = [
-    {
-      q: 'What does diversification mean?',
-      options: ['Putting all money in one company','Spreading investments across different assets','Hiding money in different places','Buying and selling every day'],
-      a: 1,
-      tip: 'Diversification reduces the impact of any single investment underperforming.'
-    },
-    {
-      q: 'Which investment typically has the highest potential return over the long term?',
-      options: ['Savings account','Government bonds','Stocks','Cash under the mattress'],
-      a: 2,
-      tip: 'Stocks are generally higher risk but higher potential returns compared to cash or bonds over long horizons.'
-    },
-    {
-      q: 'What is compound interest?',
-      options: ['Interest paid once a year','Interest on original principal only','Interest earned on interest','A loan with no interest'],
-      a: 2,
-      tip: 'Compound interest means your interest earns interest too — which helps growth over time.'
-    },
-    {
-      q: 'Why is time horizon important in investing?',
-      options: ['It determines the colour of your stocks','Shorter horizons usually mean you should prefer lower-risk investments','It is only for tax purposes','It decides your account number'],
-      a: 1,
-      tip: 'If you need money soon, choose lower-risk options. For long-term goals you can usually accept more volatility.'
-    }
-  ];
-
-  function renderQuiz(){
-    if(!quizContainer) return;
-    quizContainer.innerHTML = '';
-    questions.forEach((item, idx)=>{
-      const qEl = document.createElement('div');
-      qEl.className = 'question';
-      const h = document.createElement('h3'); h.textContent = (idx+1)+'. '+item.q; qEl.appendChild(h);
-      const opts = document.createElement('div'); opts.className = 'options';
-      item.options.forEach((opt, oi)=>{
-        const b = document.createElement('button');
-        b.className = 'option';
-        b.type = 'button';
-        b.setAttribute('data-q', idx);
-        b.setAttribute('data-a', oi);
-        b.textContent = opt;
-        b.addEventListener('click', onAnswer);
-        opts.appendChild(b);
+    // close when nav link clicked (mobile)
+    $all('#main-nav a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mainNav.classList.remove('show');
       });
-      qEl.appendChild(opts);
-      quizContainer.appendChild(qEl);
     });
-    if(quizResult){quizResult.hidden = true; quizResult.innerHTML = '';}
   }
 
-  function onAnswer(e){
-    const btn = e.currentTarget;
-    const q = Number(btn.getAttribute('data-q'));
-    const a = Number(btn.getAttribute('data-a'));
-    const item = questions[q];
-    const parent = btn.parentElement;
+  // Accessible quiz logic (progressive enhancement)
+  $all('.quiz').forEach(function (quiz) {
+    quiz.addEventListener('click', function (e) {
+      var option = e.target.closest('.option');
+      if (!option) return;
+      var q = option.closest('.question');
+      if (!q) return;
+      // If already answered, ignore
+      if (q.dataset.answered === 'true') return;
+      var correct = option.classList.contains('correct');
+      // mark option states
+      $all('.option', q).forEach(function (o) {
+        o.setAttribute('aria-pressed', 'false');
+        o.classList.remove('selected');
+      });
+      option.classList.add('selected');
+      option.setAttribute('aria-pressed', 'true');
 
-    // disable all options for that question
-    Array.from(parent.children).forEach(ch => ch.disabled = true);
+      // visual feedback
+      if (correct) {
+        option.classList.add('correct');
+      } else {
+        option.classList.add('wrong');
+      }
 
-    if(a === item.a){
-      btn.classList.add('correct');
-    } else {
-      btn.classList.add('wrong');
-      // highlight correct
-      const correctBtn = parent.querySelector('[data-a="'+item.a+'"]');
-      if(correctBtn) correctBtn.classList.add('correct');
-    }
+      // mark answered
+      q.dataset.answered = 'true';
 
-    // show tip
-    if(quizResult){
-      quizResult.hidden = false;
-      const tip = document.createElement('div');
-      tip.className = 'quiz-result';
-      tip.innerHTML = '<strong>Tip:</strong> ' + item.tip;
-      // append and keep previous tips
-      quizResult.appendChild(tip);
-    }
+      // optional: show result
+      var result = q.querySelector('.quiz-result');
+      if (result) {
+        if (correct) {
+          result.textContent = 'Nice! That answer is correct.';
+          result.classList.add('positive');
+        } else {
+          result.textContent = 'Not quite — review the lesson then try again.';
+          result.classList.add('negative');
+        }
+      }
+    });
+
+    // keyboard support for options
+    quiz.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        var option = e.target.closest('.option');
+        if (option) {
+          e.preventDefault();
+          option.click();
+        }
+      }
+    });
+  });
+
+  // Improve performance: lightly defer heavy tasks until idle (if supported)
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(function () {
+      // placeholder: analytics init or non-essential work
+    }, {timeout: 2000});
   }
-
-  if(quizContainer) renderQuiz();
-  if(restartBtn){ restartBtn.addEventListener('click', ()=>{ renderQuiz(); if(quizResult){quizResult.innerHTML=''; quizResult.hidden=true;} }); }
 
 })();

@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#081226">
   <title>{{ page.title | default: site.title }} — {{ site.title }}</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- PWA / Chrome meta (optional manifest if you add one) -->
+  <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/icons/apple-touch-icon.png">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 </head>
 <body id="{{ page.slug | default: page.title | slugify }}">
-  <header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
     <div class="container header-inner">
       <a class="brand" href="{{ site.baseurl }}/">InvestEd</a>
 
       <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
 
-      <nav id="main-nav" class="main-nav" aria-label="Primary">
+      <nav id="main-nav" class="main-nav" aria-label="Primary" role="navigation">
         <ul>
           <li><a href="{{ site.baseurl }}/learning/" {% raw %}{% endraw %}{% if page.url == "/learning/" %}aria-current="page"{% endif %}>Learning</a></li>
           <li><a href="{{ site.baseurl }}/faq/" {% raw %}{% endraw %}{% if page.url == "/faq/" %}aria-current="page"{% endif %}>FAQ</a></li>
@@ -30,16 +41,17 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     {{ content }}
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <p>© <span id="year"></span> InvestEd — Created for Cambridge ACE students</p>
     </div>
   </footer>
 
-  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  <!-- Script: defer so DOM is ready and to improve compatibility with Chrome/modern browsers -->
+  <script defer src="{{ site.baseurl }}/assets/js/script.js"></script>
 </body>
 </html>
