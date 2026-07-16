@@ -1,4 +1,9 @@
-// script.js - menu toggle, accessible quiz interactions, year update
+// script.js
+(function(){
+  // small helpers
+  const id = (s) => document.getElementById(s);
+  const yearEls = ['year','year2','year3','year4'];
+  yearEls.forEach(y=>{const el = id(y); if(el) el.textContent = new Date().getFullYear();});
 
 (function () {
   'use strict';
@@ -67,18 +72,16 @@
       // mark answered
       q.dataset.answered = 'true';
 
-      // optional: show result
-      var result = q.querySelector('.quiz-result');
-      if (result) {
-        if (correct) {
-          result.textContent = 'Nice! That answer is correct.';
-          result.classList.add('positive');
-        } else {
-          result.textContent = 'Not quite — review the lesson then try again.';
-          result.classList.add('negative');
-        }
-      }
-    });
+    // show tip
+    if(quizResult){
+      quizResult.hidden = false;
+      const tip = document.createElement('div');
+      tip.className = 'quiz-result';
+      tip.innerHTML = '<strong>Tip:</strong> ' + item.tip;
+      // append and keep previous tips
+      quizResult.appendChild(tip);
+    }
+  }
 
     // keyboard support for options
     quiz.addEventListener('keydown', function (e) {

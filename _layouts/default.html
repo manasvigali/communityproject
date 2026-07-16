@@ -1,4 +1,45 @@
-  <!-- Fonts -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title | default: site.title }} — {{ site.title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+</head>
+<body id="{{ page.slug | default: page.title | slugify }}">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ site.baseurl }}/">InvestEd</a>
+
+      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="{{ site.baseurl }}/learning/" {% raw %}{% endraw %}{% if page.url == "/learning/" %}aria-current="page"{% endif %}>Learning</a></li>
+          <li><a href="{{ site.baseurl }}/faq/" {% raw %}{% endraw %}{% if page.url == "/faq/" %}aria-current="page"{% endif %}>FAQ</a></li>
+          <li><a href="{{ site.baseurl }}/quiz/" {% raw %}{% endraw %}{% if page.url == "/quiz/" %}aria-current="page"{% endif %}>Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> InvestEd — Created for Cambridge ACE students</p>
+    </div>
+  </footer>
+
+  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+</body>
+</html>
