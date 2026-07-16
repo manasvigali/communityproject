@@ -1,4 +1,3 @@
-name=assets/js/script.js
 // script.js
 (function(){
   // small helpers
@@ -97,7 +96,7 @@ name=assets/js/script.js
       quizResult.hidden = false;
       const tip = document.createElement('div');
       tip.className = 'quiz-result';
-      tip.innerHTML = `<strong>Tip:</strong> ${item.tip}`;
+      tip.innerHTML = '<strong>Tip:</strong> ' + item.tip;
       // append and keep previous tips
       quizResult.appendChild(tip);
     }
