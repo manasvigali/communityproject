@@ -1,0 +1,10 @@
+title: InvestEd
+description: Investing education for Cambridge ACE students
+theme: jekyll-theme-slate
+url: "https://manasvigali.github.io"
+baseurl: "/communityproject"
+
+# Exclude build files
+exclude:
+  - Gemfile
+  - Gemfile.lock
