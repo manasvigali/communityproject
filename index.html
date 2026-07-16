@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>InvestEd — Investing for Teenagers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">InvestEd</a>
+
+      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="learning.html">Learning</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Investing made simple for Cambridge ACE students</h1>
+          <p class="lead">Understand the basics of investing, manage risk, and build confidence — designed for teenagers and classroom use.</p>
+          <p>
+            <a class="btn primary" href="learning.html">Start Learning</a>
+            <a class="btn ghost" href="quiz.html">Take the Quiz</a>
+          </p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="card">
+            <h3>Compound Growth</h3>
+            <p>Small savings now can grow a lot over time.</p>
+          </div>
+          <div class="card">
+            <h3>Diversify</h3>
+            <p>Don't put all your eggs in one basket.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h2>Clear lessons</h2>
+        <p>Short, example-driven explanations tuned for ACE-level thinking.</p>
+      </article>
+      <article>
+        <h2>Interactive quiz</h2>
+        <p>Check your understanding with immediate feedback and tips.</p>
+      </article>
+      <article>
+        <h2>Trusted tips</h2>
+        <p>Responsible, age-appropriate guidance about risk, saving, and borrowing.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> InvestEd — Created for Cambridge ACE students</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
