@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-# Ruby 4.0 compatible stack
-gem "jekyll", "~> 4.3"
-gem "base64"
+gem "jekyll", "= 4.4.1"
 gem "webrick", "~> 1.8"
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-default-layout", "~> 0.1"
+gem "jekyll-seo-tag", "~> 2.0"

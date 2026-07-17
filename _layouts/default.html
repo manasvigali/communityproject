@@ -27,11 +27,11 @@
         <ul>
           <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
           <li><a href="{{ site.baseurl }}/learning/" {% if page.url == "/learning/" %}aria-current="page" class="active"{% endif %}>Learning</a></li>
-          <li><a href="{{ site.baseurl }}/plans/" {% if page.url == "/plans/" %}aria-current="page" class="active"{% endif %}>Plans</a></li>
-          <li><a href="{{ site.baseurl }}/ideas/" {% if page.url == "/ideas/" %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
+          <li><a href="{% link plans.md %}" {% if page.file_name == 'plans.md' %}aria-current="page" class="active"{% endif %}>Plans</a></li>
+          <li><a href="{% link ideas.md %}" {% if page.file_name == 'ideas.md' %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
           <li><a href="{{ site.baseurl }}/quiz/" {% if page.url == "/quiz/" %}aria-current="page" class="active"{% endif %}>Quiz</a></li>
           <li><a href="{{ site.baseurl }}/faq/" {% if page.url == "/faq/" %}aria-current="page" class="active"{% endif %}>FAQ</a></li>
-          <li><a href="{{ site.baseurl }}/about/" {% if page.url == "/about/" %}aria-current="page" class="active"{% endif %}>About</a></li>
+          <li><a href="{% link about.md %}" {% if page.file_name == 'about.md' %}aria-current="page" class="active"{% endif %}>About</a></li>
         </ul>
       </nav>
     </div>

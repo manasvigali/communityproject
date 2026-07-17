@@ -53,13 +53,13 @@ permalink: /
       <p>3 comprehensive modules from investment basics to market analysis — aligned with ACE math and business curriculum.</p>
     </a>
 
-    <a href="{{ site.baseurl }}/plans/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="{% link plans.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128200;</span>
       <h3>Investment Roadmaps</h3>
       <p>Age-specific plans with step-by-step guidance. Start at 14 with $0, or scale up as your budget grows.</p>
     </a>
 
-    <a href="{{ site.baseurl }}/ideas/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="{% link ideas.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128161;</span>
       <h3>Ideas for Every Budget</h3>
       <p>12+ actionable investment ideas organized by budget tier — from free paper trading to building real portfolios.</p>
@@ -77,7 +77,7 @@ permalink: /
       <p>30+ answered questions about teen investing, apps, safety, and student-specific financial guidance.</p>
     </a>
 
-    <a href="{{ site.baseurl }}/about/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="{% link about.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#127759;</span>
       <h3>Built for Students</h3>
       <p>Created specifically for Cambridge ACE students. Connects investing concepts to your school subjects and exams.</p>
@@ -91,8 +91,8 @@ permalink: /
     <h2 style="font-size:1.5rem; margin-bottom:0.5rem;">Ready to Start Your Journey?</h2>
     <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.95rem;">Pick your starting point and begin learning about investing today — it only takes $5/month to start building wealth.</p>
     <div class="btn-group" style="justify-content:center;">
-      <a class="btn primary" href="{{ site.baseurl }}/learning/">Begin Learning</a>
-      <a class="btn ghost" href="{{ site.baseurl }}/ideas/">Browse Ideas</a>
+      <a class="btn primary" href="{% link learning.md %}">Begin Learning</a>
+      <a class="btn ghost" href="{% link ideas.md %}">Browse Ideas</a>
     </div>
   </div>
 </section>
