@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Investment Ideas for Students
-permalink: /ideas/
+permalink: /ideas.html
 ---
 
 <div class="container content">

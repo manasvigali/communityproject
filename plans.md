@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Investment Plans
-permalink: /plans/
+permalink: /plans.html
 ---
 
 <div class="container content">

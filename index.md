@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home — InvestEd
-permalink: /
+permalink: /index.html
 ---
 
 <section class="hero">
@@ -10,10 +10,10 @@ permalink: /
       <h1><span class="gradient-text">Investing for the Next Generation</span></h1>
       <p class="lead">Understand the basics of investing, manage risk, and build real financial confidence — designed specifically for Cambridge ACE/A-Level teenagers and young students.</p>
       <div class="btn-group">
-        <a class="btn primary" href="{{ site.baseurl }}/learning/">
+        <a class="btn primary" href="/learning.html">
           <span>&#9733;</span> Start Learning
         </a>
-        <a class="btn ghost" href="{{ site.baseurl }}/quiz/">
+        <a class="btn ghost" href="/quiz.html">
           <span>&#9654;</span> Take the Quiz
         </a>
       </div>
@@ -47,37 +47,37 @@ permalink: /
   <p class="section-subtitle">From zero knowledge to your first investment — structured lessons, interactive practice, and real-world ideas for every budget.</p>
 
   <div class="features-grid">
-    <a href="{{ site.baseurl }}/learning/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/learning.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128218;</span>
       <h3>Structured Lessons</h3>
       <p>3 comprehensive modules from investment basics to market analysis — aligned with ACE math and business curriculum.</p>
     </a>
 
-    <a href="{% link plans.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/plans.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128200;</span>
       <h3>Investment Roadmaps</h3>
       <p>Age-specific plans with step-by-step guidance. Start at 14 with $0, or scale up as your budget grows.</p>
     </a>
 
-    <a href="{% link ideas.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/ideas.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128161;</span>
       <h3>Ideas for Every Budget</h3>
       <p>12+ actionable investment ideas organized by budget tier — from free paper trading to building real portfolios.</p>
     </a>
 
-    <a href="{{ site.baseurl }}/quiz/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/quiz.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#9745;</span>
       <h3>Interactive Quiz</h3>
       <p>Test your knowledge with 20 questions across 3 difficulty levels. Get instant feedback and track your progress.</p>
     </a>
 
-    <a href="{{ site.baseurl }}/faq/" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/faq.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#128172;</span>
       <h3>FAQ & Guides</h3>
       <p>30+ answered questions about teen investing, apps, safety, and student-specific financial guidance.</p>
     </a>
 
-    <a href="{% link about.md %}" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
+    <a href="/about.html" class="feature-card fade-up" style="text-decoration:none;color:inherit;">
       <span class="feature-icon">&#127759;</span>
       <h3>Built for Students</h3>
       <p>Created specifically for Cambridge ACE students. Connects investing concepts to your school subjects and exams.</p>
@@ -91,8 +91,8 @@ permalink: /
     <h2 style="font-size:1.5rem; margin-bottom:0.5rem;">Ready to Start Your Journey?</h2>
     <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.95rem;">Pick your starting point and begin learning about investing today — it only takes $5/month to start building wealth.</p>
     <div class="btn-group" style="justify-content:center;">
-      <a class="btn primary" href="{% link learning.md %}">Begin Learning</a>
-      <a class="btn ghost" href="{% link ideas.md %}">Browse Ideas</a>
+      <a class="btn primary" href="/learning.html">Begin Learning</a>
+      <a class="btn ghost" href="/ideas.html">Browse Ideas</a>
     </div>
   </div>
 </section>

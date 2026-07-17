@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Learning Hub — Investing Fundamentals
-permalink: /learning/
+permalink: /learning.html
 ---
 
 <div class="container content-page">
@@ -306,7 +306,7 @@ permalink: /learning/
       <p>FV = PMT × [((1 + r)<sup>n</sup> - 1) / r] where:<br>
       PMT = $50 (monthly contribution), r = 0.08/12 (monthly rate), n = 480 (months)</p>
 
-      <p style="margin-top:1rem;">Try this calculator yourself on the <a href="{{ site.baseurl }}/plans/#compound-calculator" style="color:var(--accent-cyan);">Investment Plans page</a> with your own numbers!</p>
+      <p style="margin-top:1rem;">Try this calculator yourself on the <a href="/plans.html#compound-calculator" style="color:var(--accent-cyan);">Investment Plans page</a> with your own numbers!</p>
     </div>
   </section>
 

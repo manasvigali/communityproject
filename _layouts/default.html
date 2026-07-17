@@ -13,27 +13,40 @@
 <body id="{{ page.slug | default: page.title | slugify }}">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="{{ site.baseurl }}/">
-        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
-      </a>
 
-      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <!-- Hamburger toggle (left side, visible on mobile/tablet only) -->
+      <button class="menu-btn" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
+      <!-- Spacer (desktop only, balances brand centering) -->
+      <div class="header-spacer"></div>
+
+      <!-- Brand (centered) -->
+      <a class="brand" href="{{ site.baseurl }}/index.html">
+        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+      </a>
+
+      <!-- Home link (visible on all screen sizes, like the original desktop bar) -->
+      <a class="home-link" href="{{ site.baseurl }}/index.html" {% if page.url == "/index.html" or page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+
+      <!-- Nav links (visible as horizontal bar on desktop, overlay on mobile) -->
       <nav id="main-nav" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
-          <li><a href="{{ site.baseurl }}/learning/" {% if page.url == "/learning/" %}aria-current="page" class="active"{% endif %}>Learning</a></li>
-          <li><a href="{% link plans.md %}" {% if page.file_name == 'plans.md' %}aria-current="page" class="active"{% endif %}>Plans</a></li>
-          <li><a href="{% link ideas.md %}" {% if page.file_name == 'ideas.md' %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
-          <li><a href="{{ site.baseurl }}/quiz/" {% if page.url == "/quiz/" %}aria-current="page" class="active"{% endif %}>Quiz</a></li>
-          <li><a href="{{ site.baseurl }}/faq/" {% if page.url == "/faq/" %}aria-current="page" class="active"{% endif %}>FAQ</a></li>
-          <li><a href="{% link about.md %}" {% if page.file_name == 'about.md' %}aria-current="page" class="active"{% endif %}>About</a></li>
+          <li><a href="{{ site.baseurl }}/index.html" {% if page.url == "/index.html" or page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
+          <li><a href="{{ site.baseurl }}/learning.html" {% if page.url == "/learning.html" %}aria-current="page" class="active"{% endif %}>Learning</a></li>
+          <li><a href="{{ site.baseurl }}/plans.html" {% if page.url == "/plans.html" %}aria-current="page" class="active"{% endif %}>Plans</a></li>
+          <li><a href="{{ site.baseurl }}/ideas.html" {% if page.url == "/ideas.html" %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
+          <li><a href="{{ site.baseurl }}/quiz.html" {% if page.url == "/quiz.html" %}aria-current="page" class="active"{% endif %}>Quiz</a></li>
+          <li><a href="{{ site.baseurl }}/faq.html" {% if page.url == "/faq.html" %}aria-current="page" class="active"{% endif %}>FAQ</a></li>
+          <li><a href="{{ site.baseurl }}/about.html" {% if page.url == "/about.html" %}aria-current="page" class="active"{% endif %}>About</a></li>
         </ul>
       </nav>
+
+      <!-- Spacer (desktop only, balances nav width) -->
+      <div class="header-spacer"></div>
     </div>
   </header>
 
@@ -44,7 +57,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <a class="brand" href="{{ site.baseurl }}/">
+        <a class="brand" href="{{ site.baseurl }}/index.html">
           <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
         </a>
         <p class="footer-desc">Investment education for Cambridge ACE students and young learners.</p>
@@ -52,17 +65,17 @@
       <div class="footer-col">
         <h4>Navigate</h4>
         <ul class="footer-links">
-          <li><a href="{{ site.baseurl }}/learning/">Learning</a></li>
-          <li><a href="{{ site.baseurl }}/plans/">Investment Plans</a></li>
-          <li><a href="{{ site.baseurl }}/ideas/">Ideas</a></li>
+          <li><a href="{{ site.baseurl }}/learning.html">Learning</a></li>
+          <li><a href="{{ site.baseurl }}/plans.html">Investment Plans</a></li>
+          <li><a href="{{ site.baseurl }}/ideas.html">Ideas</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
         <ul class="footer-links">
-          <li><a href="{{ site.baseurl }}/quiz/">Quiz</a></li>
-          <li><a href="{{ site.baseurl }}/faq/">FAQ</a></li>
-          <li><a href="{{ site.baseurl }}/about/">About</a></li>
+          <li><a href="{{ site.baseurl }}/quiz.html">Quiz</a></li>
+          <li><a href="{{ site.baseurl }}/faq.html">FAQ</a></li>
+          <li><a href="{{ site.baseurl }}/about.html">About</a></li>
         </ul>
       </div>
     </div>
