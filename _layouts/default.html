@@ -25,17 +25,17 @@
       <div class="header-spacer"></div>
 
       <!-- Brand (centered) -->
-      <a class="brand" href="/">
+      <a class="brand" href="{{ site.baseurl }}/">
         <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
       </a>
 
       <!-- Home link (visible on all screen sizes, like the original desktop bar) -->
-      <a class="home-link" href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+      <a class="home-link" href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
 
       <!-- Nav links (visible as horizontal bar on desktop, overlay on mobile) -->
       <nav id="main-nav" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="/" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
+          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
           <li><a href="{{ site.baseurl }}/learning.html" {% if page.url == "/learning.html" %}aria-current="page" class="active"{% endif %}>Learning</a></li>
           <li><a href="{{ site.baseurl }}/plans.html" {% if page.url == "/plans.html" %}aria-current="page" class="active"{% endif %}>Plans</a></li>
           <li><a href="{{ site.baseurl }}/ideas.html" {% if page.url == "/ideas.html" %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
@@ -57,7 +57,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <a class="brand" href="/">
+        <a class="brand" href="{{ site.baseurl }}/">
           <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
         </a>
         <p class="footer-desc">Investment education for Cambridge ACE students and young learners.</p>

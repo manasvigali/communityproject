@@ -2,8 +2,7 @@ title: InvestEd
 description: Investment education platform for Cambridge ACE students — learn, practice, and grow your financial literacy.
 
 url: "https://manasvigali.github.io"
-# Local dev: baseurl is empty. For production use: bundle exec jekyll build --baseurl "/communityproject"
-baseurl: ""
+baseurl: "/communityproject"
 
 # Exclude build files
 exclude:
