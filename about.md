@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About InvestEd
-permalink: /about/
+permalink: /about.html
 ---
 
 ## Our Mission

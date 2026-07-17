@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quiz — Test Your Knowledge
-permalink: /quiz/
+permalink: /quiz.html
 ---
 
 <div class="container content-page">
