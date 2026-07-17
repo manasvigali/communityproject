@@ -1,10 +1,44 @@
----
-layout: default
-title: Quiz — Test Your Knowledge
-permalink: /quiz/
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quiz — Test Your Knowledge — InvestEd</title>
+  <meta name="description" content="Investment education platform for Cambridge ACE students — learn, practice, and grow your financial literacy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/communityproject/assets/css/styles.css">
+</head>
+<body id="quiz-test-your-knowledge">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/communityproject/">
+        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+      </a>
 
-<div class="container content-page">
+      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/communityproject/" >Home</a></li>
+          <li><a href="/communityproject/learning/" >Learning</a></li>
+          <li><a href="/communityproject/plans/" >Plans</a></li>
+          <li><a href="/communityproject/ideas/" >Ideas</a></li>
+          <li><a href="/communityproject/quiz/" aria-current="page" class="active">Quiz</a></li>
+          <li><a href="/communityproject/faq/" >FAQ</a></li>
+          <li><a href="/communityproject/about/" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container content-page">
   <h1>Investing Knowledge Quiz</h1>
   <p class="lead">Test what you've learned across three difficulty levels. Questions are generated dynamically — your score and time will be tracked automatically.</p>
 
@@ -286,3 +320,39 @@ permalink: /quiz/
   };
   </script>
 </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="brand" href="/communityproject/">
+          <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+        </a>
+        <p class="footer-desc">Investment education for Cambridge ACE students and young learners.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="/communityproject/learning/">Learning</a></li>
+          <li><a href="/communityproject/plans/">Investment Plans</a></li>
+          <li><a href="/communityproject/ideas/">Ideas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="/communityproject/quiz/">Quiz</a></li>
+          <li><a href="/communityproject/faq/">FAQ</a></li>
+          <li><a href="/communityproject/about/">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> InvestEd — Created for Cambridge ACE students. Educational purposes only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script src="/communityproject/assets/js/script.js"></script>
+</body>
+</html>

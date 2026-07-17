@@ -4,15 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ page.title | default: site.title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 </head>
 <body id="{{ page.slug | default: page.title | slugify }}">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="{{ site.baseurl }}/">InvestEd</a>
+      <a class="brand" href="{{ site.baseurl }}/">
+        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+      </a>
 
       <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
         <span></span>
@@ -22,9 +25,13 @@
 
       <nav id="main-nav" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="{{ site.baseurl }}/learning/" {% raw %}{% endraw %}{% if page.url == "/learning/" %}aria-current="page"{% endif %}>Learning</a></li>
-          <li><a href="{{ site.baseurl }}/faq/" {% raw %}{% endraw %}{% if page.url == "/faq/" %}aria-current="page"{% endif %}>FAQ</a></li>
-          <li><a href="{{ site.baseurl }}/quiz/" {% raw %}{% endraw %}{% if page.url == "/quiz/" %}aria-current="page"{% endif %}>Quiz</a></li>
+          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
+          <li><a href="{{ site.baseurl }}/learning/" {% if page.url == "/learning/" %}aria-current="page" class="active"{% endif %}>Learning</a></li>
+          <li><a href="{% link plans.md %}" {% if page.file_name == 'plans.md' %}aria-current="page" class="active"{% endif %}>Plans</a></li>
+          <li><a href="{% link ideas.md %}" {% if page.file_name == 'ideas.md' %}aria-current="page" class="active"{% endif %}>Ideas</a></li>
+          <li><a href="{{ site.baseurl }}/quiz/" {% if page.url == "/quiz/" %}aria-current="page" class="active"{% endif %}>Quiz</a></li>
+          <li><a href="{{ site.baseurl }}/faq/" {% if page.url == "/faq/" %}aria-current="page" class="active"{% endif %}>FAQ</a></li>
+          <li><a href="{% link about.md %}" {% if page.file_name == 'about.md' %}aria-current="page" class="active"{% endif %}>About</a></li>
         </ul>
       </nav>
     </div>
@@ -35,8 +42,32 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> InvestEd — Created for Cambridge ACE students</p>
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="brand" href="{{ site.baseurl }}/">
+          <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+        </a>
+        <p class="footer-desc">Investment education for Cambridge ACE students and young learners.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="{{ site.baseurl }}/learning/">Learning</a></li>
+          <li><a href="{{ site.baseurl }}/plans/">Investment Plans</a></li>
+          <li><a href="{{ site.baseurl }}/ideas/">Ideas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="{{ site.baseurl }}/quiz/">Quiz</a></li>
+          <li><a href="{{ site.baseurl }}/faq/">FAQ</a></li>
+          <li><a href="{{ site.baseurl }}/about/">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> InvestEd — Created for Cambridge ACE students. Educational purposes only, not financial advice.</p>
     </div>
   </footer>
 
