@@ -13,27 +13,40 @@
 <body id="home-invested">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html">
-        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
-      </a>
 
-      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+      <!-- Hamburger toggle (left side, visible on mobile/tablet only) -->
+      <button class="menu-btn" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
+      <!-- Spacer (desktop only, balances brand centering) -->
+      <div class="header-spacer"></div>
+
+      <!-- Brand (centered) -->
+      <a class="brand" href="/communityproject/index.html">
+        <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
+      </a>
+
+      <!-- Home link (visible on all screen sizes, like the original desktop bar) -->
+      <a class="home-link" href="/communityproject/index.html" aria-current="page">Home</a>
+
+      <!-- Nav links (visible as horizontal bar on desktop, overlay on mobile) -->
       <nav id="main-nav" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="/index.html" aria-current="page" class="active">Home</a></li>
-          <li><a href="/learning.html" >Learning</a></li>
-          <li><a href="/plans.html" >Plans</a></li>
-          <li><a href="/ideas.html" >Ideas</a></li>
-          <li><a href="/quiz.html" >Quiz</a></li>
-          <li><a href="/faq.html" >FAQ</a></li>
-          <li><a href="/about.html" >About</a></li>
+          <li><a href="/communityproject/index.html" aria-current="page" class="active">Home</a></li>
+          <li><a href="/communityproject/learning.html" >Learning</a></li>
+          <li><a href="/communityproject/plans.html" >Plans</a></li>
+          <li><a href="/communityproject/ideas.html" >Ideas</a></li>
+          <li><a href="/communityproject/quiz.html" >Quiz</a></li>
+          <li><a href="/communityproject/faq.html" >FAQ</a></li>
+          <li><a href="/communityproject/about.html" >About</a></li>
         </ul>
       </nav>
+
+      <!-- Spacer (desktop only, balances nav width) -->
+      <div class="header-spacer"></div>
     </div>
   </header>
 
@@ -136,7 +149,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <a class="brand" href="/index.html">
+        <a class="brand" href="/communityproject/index.html">
           <span class="brand-logo">Invest</span><span class="brand-ed">Ed</span>
         </a>
         <p class="footer-desc">Investment education for Cambridge ACE students and young learners.</p>
@@ -144,17 +157,17 @@
       <div class="footer-col">
         <h4>Navigate</h4>
         <ul class="footer-links">
-          <li><a href="/learning.html">Learning</a></li>
-          <li><a href="/plans.html">Investment Plans</a></li>
-          <li><a href="/ideas.html">Ideas</a></li>
+          <li><a href="/communityproject/learning.html">Learning</a></li>
+          <li><a href="/communityproject/plans.html">Investment Plans</a></li>
+          <li><a href="/communityproject/ideas.html">Ideas</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
         <ul class="footer-links">
-          <li><a href="/quiz.html">Quiz</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="/communityproject/quiz.html">Quiz</a></li>
+          <li><a href="/communityproject/faq.html">FAQ</a></li>
+          <li><a href="/communityproject/about.html">About</a></li>
         </ul>
       </div>
     </div>
@@ -163,6 +176,6 @@
     </div>
   </footer>
 
-  <script src="/assets/js/script.js"></script>
+  <script src="/communityproject/assets/js/script.js"></script>
 </body>
 </html>
