@@ -1,49 +1,340 @@
 ---
 layout: default
-title: Learning
+title: Learning Hub — Investing Fundamentals
 permalink: /learning/
 ---
 
-<div class="container content">
-  <h1>Learning: Investing Fundamentals</h1>
+<div class="container content-page">
+  <h1>Learning Hub</h1>
+  <p class="lead">Master investing fundamentals through structured lessons designed for Cambridge ACE/A-Level students. Each module connects to your school subjects and builds practical skills you can use immediately.</p>
 
-  <section class="lesson">
-    <h2>What is investing?</h2>
-    <p>Investing means putting money into something with the expectation it will grow over time — for example, buying shares in a company or putting money into a savings account that pays interest.</p>
+  <!-- Progress bar placeholder -->
+  <div class="quiz-progress-wrap" style="margin-bottom:2rem;">
+    <div id="learn-progress-bar" class="quiz-progress-bar" style="width:0%;"></div>
+  </div>
+
+  <!-- Lesson 1: Foundations -->
+  <section class="lesson-section fade-up">
+    <h2>&#128218; Lesson 1: Foundations of Investing</h2>
+    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">The building blocks every investor needs to understand before putting money to work.</p>
+
+    <details class="collapsible">
+      <summary>What Is Investing?</summary>
+      <div class="collapsible-content">
+        <p>Investing means putting your money to work for you, rather than letting it sit idle. When you invest, you're buying a piece of something that has the potential to grow in value over time.</p>
+        <h4>Simple Analogy</h4>
+        <p>Imagine you have $100. If you leave it under your mattress, you still have $100 in 10 years (minus inflation). But if you invest that $100 wisely, it could become $250, $500, or even more — depending on what you invest in and how long you wait.</p>
+        <h4>Real-World Example</h4>
+        <p>In 2010, someone who invested $1,000 in an S&P 500 index fund would have about $4,000 today. That's a 300% return — just by owning a diversified basket of America's biggest companies.</p>
+        <h4>ACE Math Connection</h4>
+        <p>Investing uses the same math you're learning: exponents (compound interest), percentages (returns), and graphs (price charts). Your ACE Mathematics Paper 2 on functions is directly applicable!</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Risk and Return — The Golden Rule</summary>
+      <div class="collapsible-content">
+        <p><strong>The fundamental rule of investing:</strong> Higher potential returns come with higher risk. There is no way around this.</p>
+        <h4>The Risk Spectrum</h4>
+        <ul>
+          <li><strong>Low Risk (Low Return):</strong> Savings accounts, government bonds. Your money is safe but grows slowly (~2-5% per year).</li>
+          <li><strong>Medium Risk (Medium Return):</strong> Index funds and ETFs. Some fluctuation, but historically ~8-10% per year over long periods.</li>
+          <li><strong>High Risk (High Potential Return):</strong> Individual stocks, cryptocurrency. Could double or lose 50% in a year.</li>
+        </ul>
+        <h4>Why This Matters for Students</h4>
+        <p>As a young investor, you have the biggest advantage: <em>time</em>. Time lets you ride out market dips and benefit from compound growth. That's why starting with index funds (medium risk) is ideal — enough return to grow meaningfully, but diversified enough to survive any single company's failure.</p>
+        <h4>ACE Economics Link</h4>
+        <p>This connects directly to the concept of opportunity cost in economics. Keeping money under your mattress costs you the "opportunity" of earning compound returns — a real, quantifiable loss.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Compound Interest — The Eighth Wonder of the World</summary>
+      <div class="collapsible-content">
+        <p>Einstein reportedly called compound interest "the eighth wonder of the world." Here's why:</p>
+        <h4>The Formula</h4>
+        <p><strong>A = P(1 + r)<sup>n</sup></strong></p>
+        <p>Where A = final amount, P = principal (initial investment), r = annual rate, n = years</p>
+        <h4>Example Calculation (ACE Math Level)</h4>
+        <p>If you invest $50/month at 8% annual return:</p>
+        <ul>
+          <li>After 1 year: ~$632 (you contributed $600, earned $32)</li>
+          <li>After 10 years: ~$9,700 (you contributed $6,000, earned $3,700)</li>
+          <li>After 30 years: ~$84,000 (you contributed $18,000, earned $66,000!)</li>
+        </ul>
+        <p>Notice something incredible: the later your earnings are multiples of what you actually contributed. That's the power of compounding.</p>
+        <h4>The Time Advantage</h4>
+        <p>This is why starting at 15 vs. 25 matters enormously:</p>
+        <ul>
+          <li><strong>Start at 15:</strong> $80/month for 50 years at 8% = <strong>$763,000</strong></li>
+          <li><strong>Start at 25:</strong> $80/month for 40 years at 8% = <strong>$330,000</strong></li>
+          <li><strong>Start at 35:</strong> $80/month for 30 years at 8% = <strong>$126,000</strong></li>
+        </ul>
+        <p>Starting 10 years earlier more than doubles your result with the same monthly contribution. Time is your superpower.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Diversification — Don't Put All Eggs in One Basket</summary>
+      <div class="collapsible-content">
+        <p>Diversification means spreading your investments across different types of assets so that if one does poorly, others may do well.</p>
+        <h4>The Magic of Spreading Risk</h4>
+        <p>In 2000, the tech stock dot-com bubble burst. Companies like Pets.com and Webvan went to zero. But investors who held diversified index funds barely noticed because their money was spread across 500 companies — not just tech.</p>
+        <h4>A Simple Diversified Portfolio</h4>
+        <ul>
+          <li><strong>40% US Stocks</strong> (VOO - S&P 500 ETF)</li>
+          <li><strong>30% International Stocks</strong> (VXUS - Total International ETF)</li>
+          <li><strong>20% Bonds</strong> (BND - Total Bond Market ETF)</li>
+          <li><strong>10% Learning Fund</strong> — individual stocks you research and want to experiment with</li>
+        </ul>
+        <p>No single investment can hurt your portfolio more than 40%. That's diversification working.</p>
+      </div>
+    </details>
   </section>
 
-  <section class="lesson">
-    <h2>Risk and return</h2>
-    <p>Higher potential returns usually come with higher risk. It's important to match how much risk you take with your goals and time horizon.</p>
+  <!-- Lesson 2: Market Basics -->
+  <section class="lesson-section fade-up">
+    <h2>&#128202; Lesson 2: Understanding the Markets</h2>
+    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">How stocks, bonds, and funds work — with real examples you can relate to.</p>
+
+    <details class="collapsible">
+      <summary>How Stock Markets Work</summary>
+      <div class="collapsible-content">
+        <p>The stock market is like a giant marketplace where people buy and sell tiny pieces (shares) of companies. When you buy one share of Apple, you own one tiny slice of Apple.</p>
+        <h4>Why Do Stock Prices Move?</h4>
+        <p>Prices change based on supply and demand — the same economics principle you study in ACE Economics:</p>
+        <ul>
+          <li><strong>Price goes up</strong> when more people want to buy than sell (demand > supply)</li>
+          <li><strong>Price goes down</strong> when more people want to sell than buy (supply > demand)</li>
+        </ul>
+        <h4>What Drives Demand?</h4>
+        <ul>
+          <li>Company earnings reports (are they making more profit?)</li>
+          <li>New products or services (iPhone launch, AI developments)</li>
+          <li>Industry trends (electric vehicles, renewable energy)</li>
+          <li>Overall economy (interest rates, GDP growth, unemployment)</li>
+        </ul>
+        <h4>ACE Math Connection</h4>
+        <p>You can analyze stock data using the same statistical methods from your ACE syllabus: mean, standard deviation, correlation. A stock's "beta" measures how volatile it is compared to the overall market — that's standard deviation in practice!</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Types of Investments Explained</summary>
+      <div class="collapsible-content">
+        <h4>1. Stocks (Equities)</h4>
+        <p>You own a piece of one company. Potential: high returns. Risk: if the company fails, you could lose everything.</p>
+        <p><em>Example: Buying 10 shares of Microsoft at $300 = $3,000 investment. If Microsoft grows to $400/share, your investment is worth $4,000 — a $1,000 gain (33%).</em></p>
+
+        <h4>2. Bonds (Fixed Income)</h4>
+        <p>You're lending money to a company or government in exchange for regular interest payments. Lower risk than stocks.</p>
+        <p><em>Example: A US Treasury bond pays 4.5% per year. Put $1,000 in = $45/year interest, and you get your $1,000 back when it matures.</em></p>
+
+        <h4>3. ETFs (Exchange-Traded Funds)</h4>
+        <p>A single ticker that gives you hundreds of stocks at once. The most popular investment for beginners.</p>
+        <p><em>VOO = one share = ownership in Apple, Microsoft, Amazon, Google, and 497 other companies. One purchase = instant diversification.</em></p>
+
+        <h4>4. Mutual Funds</h4>
+        <p>Similar to ETFs but professionally managed (with higher fees). Good for long-term goals like retirement.</p>
+
+        <h4>5. REITs (Real Estate Investment Trusts)</h4>
+        <p>Invest in real estate without buying property. Earn rental income distributions.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Reading Financial News Like a Pro</summary>
+      <div class="collapsible-content">
+        <p>Understanding financial news is like learning a new language. Here's your dictionary:</p>
+        <h4>Key Terms to Know</h4>
+        <ul>
+          <li><strong>P/E Ratio (Price-to-Earnings):</strong> How much investors pay for $1 of earnings. Lower = cheaper valuation. Apple's P/E ~30 means investors pay $30 for every $1 the company earns.</li>
+          <li><strong>Market Cap:</strong> Total value of a company. Stock price × total shares. "Large-cap" (>10B) are more stable; "small-cap" are riskier but can grow faster.</li>
+          <li><strong>Bull Market:</strong> Prices rising broadly (optimism). Named because a bull thrusts its horns upward.</li>
+          <li><strong>Bear Market:</strong> Prices falling 20%+ from highs (pessimism). Named because a bear swipes downward.</li>
+          <li><strong>VOLATILITY:</strong> How wildly prices swing. High volatility = scary but also opportunity. Your ACE statistics knowledge helps you measure this!</li>
+        </ul>
+        <h4>Where to Follow News</h4>
+        <ul>
+          <li><strong>Investopedia.com</strong> — free encyclopedia with beginner explanations</li>
+          <li><strong>Khan Academy Finance</strong> — excellent video tutorials (ACE-level appropriate)</li>
+          <li><strong>Bloomberg Quicktake</strong> — short daily briefings, perfect for your 15-min morning routine</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Market Cycles — Understanding Boom and Bust</summary>
+      <div class="collapsible-content">
+        <p>Markets have always gone through cycles. Understanding this prevents panic selling during downturns.</p>
+        <h4>Historical Examples (For Context)</h4>
+        <ul>
+          <li><strong>2008 Financial Crisis:</strong> S&P 500 fell ~50%. Anyone who waited it out made their money back within 4 years and far exceeded it over time.</li>
+          <li><strong>2020 Pandemic Crash:</strong> Market dropped 34% in 1 month, then recovered to new highs in just 4 months. The fastest recovery in history.</li>
+        </ul>
+        <h4>The Lesson for Students</h4>
+        <p>Market drops are not the end — they're sales. If you're investing monthly (dollar-cost averaging), a drop means your $100 buys more shares at lower prices. When the market recovers, you benefit twice: from the price going back up AND from owning more shares.</p>
+        <h4>ACE Mathematics Link</h4>
+        <p>This connects to the concept of mean reversion — a statistical principle that data points tend to move toward the long-term average over time. Stock market returns follow this pattern across decades-long periods.</p>
+      </div>
+    </details>
   </section>
 
-  <section class="lesson">
-    <h2>Diversification</h2>
-    <p>Spreading money across different investments reduces the chance that one bad investment will ruin your savings.</p>
+  <!-- Lesson 3: Money Skills -->
+  <section class="lesson-section fade-up">
+    <h2>&#128176; Lesson 3: Money Management Skills</h2>
+    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">The real-world money habits that make investing possible and effective.</p>
+
+    <details class="collapsible">
+      <summary>Budgeting for Teen Investors</summary>
+      <div class="collapsible-content">
+        <p>You can't invest what you don't save. Budgeting is your foundation.</p>
+        <h4>The 50/30/20 Rule (Adjusted for Teens)</h4>
+        <ul>
+          <li><strong>50% Needs:</strong> Phone plan, transport, food — basic living costs</li>
+          <li><strong>30% Wants:</strong> Entertainment, hobbies, shopping — the fun stuff</li>
+          <li><strong>20% Savings & Investing:</strong> This is your investing money. Even if it starts at just $20/month.</li>
+        </ul>
+        <h4>Simplified Teen Budgeting</h4>
+        <p>If you get $50/week allowance + birthday money ($200/month): save/invest $30/month first, then spend the rest. Pay yourself first — it's the single most important budgeting rule.</p>
+        <h4>ACE Business Studies Link</h4>
+        <p>This directly relates to cash flow management you learn in business studies. Your personal "business" (you) needs to manage revenue (allowance/income), fixed costs (phone, transport), and profit (savings).</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>The Emergency Fund Rule</summary>
+      <div class="collapsible-content">
+        <p>Before investing aggressively, build an emergency fund. This is money set aside for unexpected expenses so you never have to sell investments at a loss.</p>
+        <h4>How Much?</h4>
+        <ul>
+          <li><strong>Teens:</strong> Start with $100, build to $500 minimum</li>
+          <li><strong>College students:</strong> 3-6 months of expenses ($1,000-$5,000)</li>
+        </ul>
+        <h4>Where to Keep It?</h4>
+        <p>High-yield savings account (currently 4-5% APY at banks like Ally, Marcus, SoFi). This earns you more than a regular savings account with virtually zero risk.</p>
+        <h4>Why It Matters</h4>
+        <p>Without an emergency fund, when your laptop breaks or you need a textbook, you'll be forced to sell investments — potentially at a loss. The emergency fund protects your investing strategy from life's unpredictability.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Avoiding Debt Traps</summary>
+      <div class="collapsible-content">
+        <p>Debt is the enemy of wealth building. Here's why:</p>
+        <h4>The Math of Credit Card Debt</h4>
+        <p>If you carry a $1,000 balance on a credit card at 22% APR and only pay the minimum (2% of balance):</p>
+        <ul>
+          <li>It takes <strong>28 years</strong> to pay off</li>
+          <li>You pay <strong>$1,300+ in interest alone</strong></li>
+          <li>Total paid: over $2,300 for something that cost $1,000</li>
+        </ul>
+        <h4>The Opportunity Cost of Debt</h4>
+        <p>Every dollar you pay in interest is a dollar not compounding in your investments. That $1,300 in credit card interest, invested at 8% over 28 years, would have grown to <strong>$14,500</strong>. Debt doesn't just cost you money — it costs you future wealth.</p>
+        <h4>Rules for Teens</h4>
+        <ul>
+          <li>Never use credit cards unless you can pay the full balance every month</li>
+          <li>If someone offers you "investing with guaranteed returns" that sounds too good to be true — it is (scam alert)</li>
+          <li>Borrowed money for investing (margin) = double risk. Avoid as a beginner.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>Setting Financial Goals (Short, Medium, Long Term)</summary>
+      <div class="collapsible-content">
+        <p>Without goals, investing feels aimless. Set specific targets:</p>
+        <h4>Short-Term (0-1 year)</h4>
+        <ul>
+          <li>Save your first $50 emergency fund</li>
+          <li>Complete paper trading simulation with 5+ trades</li>
+          <li>Read one investing book</li>
+        </ul>
+
+        <h4>Medium-Term (1-5 years)</h4>
+        <ul>
+          <li>Open your first brokerage account</li>
+          <li>Build a $500 investment portfolio</li>
+          <li>Complete the InvestEd quiz with 80%+ score</li>
+        </ul>
+
+        <h4>Long-Term (5+ years)</h4>
+        <ul>
+          <li>Have a diversified portfolio of 3+ ETFs</li>
+          <li>Your investments generate their first dividend payments</li>
+          <li>Mentor another student on investing basics</li>
+        </ul>
+
+        <p><strong>Pro tip:</strong> Write your goals down and review them monthly. Students who track their financial goals are 4x more likely to achieve them (Fidelity study).</p>
+      </div>
+    </details>
   </section>
 
-  <section class="lesson">
-    <h2>Types of investments</h2>
-    <ul>
-      <li><strong>Stocks:</strong> Partial ownership of a company.</li>
-      <li><strong>Bonds:</strong> Loans to companies or governments that pay interest.</li>
-      <li><strong>Funds:</strong> Baskets of stocks/bonds managed together (e.g., ETFs).</li>
-      <li><strong>Savings accounts:</strong> Low risk, lower returns — useful for short-term goals.</li>
+  <!-- Try It Section -->
+  <section class="lesson-section fade-up" style="border-color: rgba(110,231,183,0.2);">
+    <h2>&#127919; Try It: Compound Interest Walkthrough</h2>
+    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Let's calculate step by step — the same math you'll use in your ACE exams.</p>
+
+    <div class="collapsible-content">
+      <p><strong>Scenario:</strong> You start investing $50 per month at age 15. The market returns 8% annually (historical average of S&P 500). What happens over time?</p>
+
+      <h4>Year 1: The Beginning</h4>
+      <p>Total invested: $50 × 12 = $600<br>
+      Interest earned: ~$21<br>
+      Total: <strong>$621</strong></p>
+      <p><em>Notice: Most of your money is from contributions, not interest. This is normal — give it time.</em></p>
+
+      <h4>Year 5: The Pattern Emerges</h4>
+      <p>Total invested: $50 × 60 = $3,000<br>
+      Interest earned: ~$278<br>
+      Total: <strong>$3,278</strong></p>
+      <p><em>The interest is growing faster than the previous year. The curve is starting to bend upward.</em></p>
+
+      <h4>Year 15: Compounding Takes Hold</h4>
+      <p>Total invested: $50 × 180 = $9,000<br>
+      Interest earned: ~$4,367<br>
+      Total: <strong>$13,367</strong></p>
+      <p><em>Now interest is almost half your total. The compounding effect is real.</em></p>
+
+      <h4>Year 40: The Snowball Effect</h4>
+      <p>Total invested: $50 × 480 = $24,000<br>
+      Interest earned: ~$136,800<br>
+      Total: <strong>$160,800</strong></p>
+      <p><em>You put in $24K but your money grew to $160K. The interest you earned is 5.7x your contributions. This is why time matters more than any other factor.</em></p>
+
+      <h4>ACE Mathematics Formula Used</h4>
+      <p>FV = PMT × [((1 + r)<sup>n</sup> - 1) / r] where:<br>
+      PMT = $50 (monthly contribution), r = 0.08/12 (monthly rate), n = 480 (months)</p>
+
+      <p style="margin-top:1rem;">Try this calculator yourself on the <a href="{{ site.baseurl }}/plans/#compound-calculator" style="color:var(--accent-cyan);">Investment Plans page</a> with your own numbers!</p>
+    </div>
+  </section>
+
+  <!-- Further Resources -->
+  <section class="lesson-section fade-up">
+    <h2>&#128214; Further Resources</h2>
+    <p style="color:var(--text-secondary); margin-bottom:1rem;">Continue learning with these carefully selected resources:</p>
+
+    <h4 style="color:var(--accent-green); margin-bottom:0.5rem;">Books (Beginner-Friendly)</h4>
+    <ul style="color:var(--text-secondary); margin-bottom:1.5rem; padding-left:1.5rem;">
+      <li><strong>"The Little Book of Common Sense Investing" — John Bogle</strong> (founder of Vanguard): The definitive guide to index fund investing. Written for everyone.</li>
+      <li><strong>"One Up on Wall Street" — Peter Lynch:</strong> How everyday people can find great stocks by observing their surroundings. Perfect for students who already see products and trends daily.</li>
+      <li><strong>"I Will Teach You to Be Rich" — Ramit Sethi:</strong> Practical, no-nonsense money guide for young adults. Covers banking, investing, and automation.</li>
+    </ul>
+
+    <h4 style="color:var(--accent-cyan); margin-bottom:0.5rem;">Free Online Courses</h4>
+    <ul style="color:var(--text-secondary); margin-bottom:1.5rem; padding-left:1.5rem;">
+      <li><strong>Khan Academy — Finance & Capital Markets:</strong> Complete free course. ACE-level appropriate with clear explanations.</li>
+      <li><strong>Investopedia Academy — Stock Investing for Beginners:</strong> Free tutorials covering everything from what a stock is to portfolio management.</li>
+      <li><strong>Coursera — Financial Markets (Yale University):</strong> Robert Shiller's famous Yale course. Free to audit.</li>
+    </ul>
+
+    <h4 style="color:var(--accent-purple); margin-bottom:0.5rem;">YouTube Channels</h4>
+    <ul style="color:var(--text-secondary); margin-left:1.5rem;">
+      <li><strong>Two Cents (PBS):</strong> Fun, animated explanations of personal finance concepts.</li>
+      <li><strong>Andrei Jikh:</strong> Clear breakdowns of index funds, dividend investing, and market analysis.</li>
+      <li><strong>The Plain Bagel:</strong> Calm, factual explanations. No hype — perfect for serious learners.</li>
     </ul>
   </section>
 
-  <section class="lesson">
-    <h2>Practical tips for teenagers</h2>
-    <ol>
-      <li>Start saving early — even a small amount compounds.</li>
-      <li>Keep an emergency fund (3–6 months of basic expenses).</li>
-      <li>Avoid high-interest debt like credit card balances.</li>
-      <li>Learn by using a simulation or paper portfolio before real money.</li>
-    </ol>
-  </section>
-
-  <section class="lesson">
-    <h2>Further resources</h2>
-    <p>Books and sites: <em>The Little Book of Common Sense Investing</em>, Khan Academy (finance), and reputable financial news sites. Always check sources and prefer educational materials targeted at beginners.</p>
-  </section>
 </div>

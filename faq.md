@@ -4,31 +4,186 @@ title: FAQ
 permalink: /faq/
 ---
 
-<div class="container content">
-  <h1>Frequently Asked Questions</h1>
-
-  <details>
-    <summary>Is investing safe for teenagers?</summary>
-    <p>Investing carries risk. Teenagers can start learning and use simulations or custodial accounts guided by parents. Focus on education and low-cost diversified funds for real investing.</p>
-  </details>
-
-  <details>
-    <summary>How much should I start with?</summary>
-    <p>Even small amounts help you learn. Aim to save regularly. The exact amount depends on your goals.</p>
-  </details>
-
-  <details>
-    <summary>What's the difference between saving and investing?</summary>
-    <p>Saving is setting money aside (often low risk, easy access). Investing aims for growth but can fluctuate in value.</p>
-  </details>
-
-  <details>
-    <summary>Where can I practice without risk?</summary>
-    <p>Use paper portfolios, stock market simulators, or demo accounts that let you practice with virtual money.</p>
-  </details>
-
-  <details>
-    <summary>Who should I ask for help?</summary>
-    <p>Talk to parents, teachers, or a qualified financial advisor for big decisions. For learning, use trusted educational resources.</p>
-  </details>
+<div class="faq-search">
+  <input type="text" id="faq-search" placeholder="Search questions...">
 </div>
+
+## Getting Started
+
+<details id="faq-safe-teens">
+  <summary>Is investing safe for teenagers?</summary>
+  <p>Investing always carries some level of risk, but there are ways to manage it. Teenagers can start by using paper portfolios or simulators to learn without risking real money. When ready to invest with real funds, custodial accounts guided by a parent or guardian offer legal protection and oversight. Focusing on education first and choosing low-cost diversified index funds for any real investing helps reduce risk while you build knowledge.</p>
+</details>
+
+<details id="faq-how-much-start">
+  <summary>How much should I start with?</summary>
+  <p>The most important thing is to start — even a small amount teaches valuable lessons. You might begin with the equivalent of KES 500 to KES 2,000 as you get comfortable with the process. The key principle is consistency: regularly adding a manageable amount each month (a strategy known as dollar-cost or shilling-cost averaging) often outperforms trying to time large lump-sum entries into the market.</p>
+</details>
+
+<details id="faq-saving-vs-investing">
+  <summary>What's the difference between saving and investing?</summary>
+  <p>Saving means setting money aside in a low-risk account where it earns little or modest interest. Your principal is generally safe, but returns are small and may not keep pace with inflation. Investing puts your money to work in assets like stocks or funds that historically grow faster over time, but the value can fluctuate up and down. Think of saving as protection and investing as growth.</p>
+</details>
+
+<details id="faq-practice-without-risk">
+  <summary>Where can I practice without risk?</summary>
+  <p>Use paper portfolios, stock market simulators, or demo accounts that let you practice with virtual money. Many brokerage apps offer a paper-trading mode. You can also join classroom-based simulations where teams compete to build the best virtual portfolio. This lets you test strategies and learn from mistakes without losing a single shilling.</p>
+</details>
+
+<details id="faq-who-to-ask">
+  <summary>Who should I ask for help?</summary>
+  <p>Talk to parents or guardians for custody-related questions, teachers who can clarify academic connections, and qualified financial advisors when making significant real-money decisions. For general learning, lean on trusted educational resources like InvestEd, Khan Academy, official securities regulator guides, and publicly available prospectuses from licensed brokers.</p>
+</details>
+
+<details id="faq-parent-permission">
+  <summary>Do I need a parent's permission to invest?</summary>
+  <p>In Kenya (and most countries), minors under 18 cannot open brokerage or investment accounts in their own name. You will need a parent or legal guardian to open a custodial account on your behalf and co-manage it until you reach the age of majority. Some platforms allow limited student access with guardian approval, so always check the specific platform's terms.</p>
+</details>
+
+<details id="faq-brokerage-at-age">
+  <summary>Can I open a brokerage account at my age?</summary>
+  <p>If you are under 18, the account must be opened as a custodial or juvenile account with a parent or guardian. Once you turn 18, you can open a standard investment account yourself by providing valid identification and proof of residence. Always choose a broker regulated by the Capital Markets Authority (CMA) in Kenya to ensure your money is handled properly.</p>
+</details>
+
+## Investing Basics
+
+<details id="faq-sp500">
+  <summary>What is the S&P 500 and why is it popular?</summary>
+  <p>The S&P 500 is an index tracking the 500 largest publicly traded companies in the United States, spanning all major sectors. It is popular because it gives investors broad exposure to the U.S. economy through a single fund. Over long periods, S&P 500 index funds have delivered solid average returns with less risk than picking individual stocks, making them a go-to choice for beginners building a diversified portfolio.</p>
+</details>
+
+<details id="faq-etfs-vs-mutual">
+  <summary>What are ETFs and how do they differ from mutual funds?</summary>
+  <p>Exchange-Traded Funds (ETFs) pool money from many investors to buy a basket of assets like stocks or bonds, and they trade on exchanges throughout the day like individual shares. Mutual funds are also pooled investments, but they are priced once per day at closing. ETFs typically have lower fees than actively managed mutual funds, offer more flexibility, and often track an index (passive) rather than relying on a fund manager's picks.</p>
+</details>
+
+<details id="faq-dollar-cost-averaging">
+  <summary>What is dollar-cost averaging?</summary>
+  <p>Dollar-cost averaging means investing a fixed amount at regular intervals regardless of market conditions. When prices are low, your money buys more units; when prices are high, it buys fewer. This smooths out the average cost over time and removes the temptation (and difficulty) of trying to time the market. For students earning pocket money or allowance, this approach is practical and stress-free.</p>
+</details>
+
+<details id="faq-compound-interest">
+  <summary>What is compound interest and why does it matter?</summary>
+  <p>Compound interest means you earn returns on both your original investment and the gains those returns generate. For example, KES 10,000 growing at 10% per year becomes roughly KES 25,900 after 10 years — not just KES 20,000 as simple interest would suggest. The longer your time horizon, the more powerful compounding becomes. This is why starting young gives you a massive advantage over anyone who waits.</p>
+</details>
+
+<details id="faq-stock-vs-bond">
+  <summary>What's the difference between a stock and a bond?</summary>
+  <p>A stock represents ownership in a company: if the company grows, your share becomes more valuable, and you may receive dividends. A bond is essentially a loan you make to a government or corporation: they promise to pay you back with interest over time. Stocks generally offer higher growth potential but carry more risk; bonds are typically more stable and suitable for preserving capital.</p>
+</details>
+
+<details id="faq-index-fund">
+  <summary>What is an index fund?</summary>
+  <p>An index fund is a type of investment that automatically copies a market benchmark, such as the Nairobi Securities Exchange (NSE) 20 Share Index or the S&P 500. Instead of trying to pick individual winners, you buy a slice of every company in the index. Index funds are low-cost, diversified, and consistently outperform most actively managed funds over long periods — making them an excellent starting point for student investors.</p>
+</details>
+
+## For Students
+
+<details id="faq-student-accounts">
+  <summary>Are there special investment accounts for students?</summary>
+  <p>In Kenya, custodial accounts (UTMA-style) allow parents to invest on behalf of minors. Some banks and brokers also offer youth savings plans with reduced fees. In the United States, a Custodial UGMA/UTMA or a 529 plan serves this purpose. Outside these, there are no universal "student investment accounts," but scholarship programs and university partnerships sometimes provide students with free trading access or educational credits.</p>
+</details>
+
+<details id="faq-investing-while-college">
+  <summary>How can I start investing while in college?</summary>
+  <p>Once you are 18, open your own brokerage account with a regulated platform. Start small with index funds or ETFs through dollar-cost averaging from your allowance or part-time income. Many universities offer financial literacy workshops; take advantage of them. If your school has partnerships with licensed brokers, they often provide discounted rates for students.</p>
+</details>
+
+<details id="faq-campus-clubs">
+  <summary>Do campus investing clubs help with learning?</summary>
+  <p>Absolutely. Investing clubs give you a community to discuss ideas, share research, and run paper-trading competitions together. Many universities have finance or investment societies that organize guest talks from professionals, fund analyses, and mock portfolio challenges. If your campus does not have one, consider starting it — it looks great on your CV and builds skills no classroom can replicate.</p>
+</details>
+
+<details id="faq-free-discounted-accounts">
+  <summary>Can students get free or discounted brokerage accounts?</summary>
+  <p>Many online brokers offer commission-free stock trading, especially in the U.S. market. Some Kenyan institutions run student programs with waived account-opening fees or reduced stamp duties. Always read the fine print: zero trading commissions can still come with withdrawal fees or inactivity charges. Look for transparent providers that publish their fee schedule clearly.</p>
+</details>
+
+<details id="faq-finance-scholarships">
+  <summary>What financial aid scholarships relate to finance and investing?</summary>
+  <p>Several organizations offer scholarships in finance, economics, and entrepreneurship — the CFA Institute Research Challenge, the International Economics Competition, and university-specific merit awards for business students. In Kenya, look for government bursaries (e.g., HELB), corporate scholarships from banks and insurance companies, and foundation grants aimed at youth development. These can fund formal education alongside your self-study in investing.</p>
+</details>
+
+## Tools & Apps
+
+<details id="faq-apps-beginners">
+  <summary>What apps are good for beginner investors?</summary>
+  <p>For Kenyan students: use platforms licensed by the CMA such as Sandvik, PFS Investment Managers, or Cytonn for accessible investment options. Internationally, platforms like eToro, Interactive Brokers, and Fidelity offer strong educational tools. For tracking your portfolio anywhere, Google Sheets or apps like Mint can help organize holdings. Always verify that any platform you use holds proper regulatory approvals.</p>
+</details>
+
+<details id="faq-robo-advisors">
+  <summary>Are robo-advisors appropriate for young investors?</summary>
+  <p>Robo-advisors are automated platforms that build and manage a diversified portfolio based on your risk profile and goals. They charge low fees, require small minimum investments, and take the guesswork out of asset allocation — making them well-suited to students who want hands-off investing. However, they cannot teach you the mechanics of investing as actively using your own portfolio would. Use them as a complement, not a substitute, for learning.</p>
+</details>
+
+<details id="faq-paper-trading">
+  <summary>Is paper trading realistic enough to learn from?</summary>
+  <p>Paper trading is very valuable for learning how to research stocks, build portfolios, and track performance without financial risk. However, it lacks the emotional pressure of real money, which means you may take unrealistic risks or ignore discipline rules when actual funds are involved. Treat paper-trading as a rehearsal phase: set yourself strict virtual rules (position sizing, stop-losses) and review your results honestly before going live.</p>
+</details>
+
+<details id="faq-compare-fee">
+  <summary>How do I compare brokerage fees?</summary>
+  <p>Look beyond the headline commission. Compare: trading fees per transaction, withdrawal or transfer charges, inactivity fees, custody or annual account fees, spreads on currency conversion, and any hidden costs like regulatory levies. Create a simple comparison table across three factors: total cost per KES 10,000 invested, ease of depositing Kenyan shillings, and platform usability for beginners.</p>
+</details>
+
+<details id="faq-budgeting-app">
+  <summary>Should I use a budgeting app alongside investing?</summary>
+  <p>Yes. You can only invest what you have saved, so knowing your cash flow is essential. A budgeting app helps you track income and expenses, identify how much you can spare each month, and set up automatic transfers to your investment account. Without this foundation, even the best portfolio strategy fails because contributions are inconsistent or unplanned.</p>
+</details>
+
+## Safety & Legal
+
+<details id="faq-legal-protections">
+  <summary>What legal protections exist for young investors?</summary>
+  <p>In Kenya, the Capital Markets Authority (CMA) regulates securities markets and protects investors against fraud and market manipulation. Licensed brokers must hold client funds in segregated accounts. If you use a custodial account, your parent or guardian has fiduciary responsibility over those funds. Internationally, investor compensation schemes (e.g., SIPC in the U.S.) protect up to certain limits if a broker fails.</p>
+</details>
+
+<details id="faq-protect-from-scams">
+  <summary>How do I protect myself from investment scams?</summary>
+  <p>Avoid anything promising guaranteed high returns with no risk — that is always a red flag. Only use platforms regulated by the CMA in Kenya or recognized authorities abroad. Be skeptical of "hot tips" on WhatsApp, Telegram, or social media. Never share your account passwords or send money to unverified third parties. If an opportunity sounds too good to be true, research its licensing status on the regulator's website before proceeding.</p>
+</details>
+
+<details id="faq-taxes-minors">
+  <summary>Do I need to pay taxes on investment gains as a minor?</summary>
+  <p>In Kenya, dividends from listed companies are subject to a withholding tax (typically 10%), and capital gains may be taxable depending on the asset class. For minors, returns are usually reported under the custodial account holder's (parent or guardian) name for tax purposes. Always consult a tax professional or check the latest KRA guidelines, as rules change and your personal situation may vary.</p>
+</details>
+
+<details id="faq-custodial-account">
+  <summary>What is a custodial account (UTMA/UGMA)?</summary>
+  <p>A custodial account is an investment account opened by an adult on behalf of a minor. The adult manages the assets until the child reaches the age of majority (18 in Kenya). UTMA and UGMA are U.S.-specific terms; in Kenya, similar arrangements are governed by local family law and CMA regulations. Custodial accounts allow teens to invest early, build a track record, and learn from real market experience while an adult oversees compliance.</p>
+</details>
+
+<details id="faq-crypto-teenagers">
+  <summary>Is cryptocurrency legal for teenagers to invest in?</summary>
+  <p>Kenya does not outright ban cryptocurrency, but the Central Bank has warned against using unregulated crypto assets due to their volatility and lack of consumer protections. Most licensed Kenyan brokers do not offer crypto trading. Internationally, most platforms require you to be 18 or older to open an account. If you are interested in blockchain technology, focus on education first rather than risking real money in this highly speculative space.</p>
+</details>
+
+</div>
+
+<style>
+.faq-search { margin-bottom: 1.5rem; }
+.faq-search input {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+details { margin-bottom: 0.75rem; }
+summary { cursor: pointer; font-weight: 600; padding: 0.3rem 0; }
+</style>
+
+<script>
+(function() {
+  const input = document.getElementById('faq-search');
+  if (!input) return;
+  input.addEventListener('input', function() {
+    const q = this.value.toLowerCase();
+    document.querySelectorAll('details').forEach(function(d) {
+      const text = d.textContent.toLowerCase();
+      d.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+})();
+</script>

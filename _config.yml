@@ -1,6 +1,5 @@
 title: InvestEd
-description: Investing education for Cambridge ACE students
-theme: jekyll-theme-slate
+description: Investment education platform for Cambridge ACE students — learn, practice, and grow your financial literacy.
 url: "https://manasvigali.github.io"
 baseurl: "/communityproject"
 
@@ -8,3 +7,4 @@ baseurl: "/communityproject"
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules

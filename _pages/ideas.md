@@ -1,0 +1,232 @@
+---
+layout: default
+title: Investment Ideas for Students
+permalink: /ideas/
+---
+
+<div class="container content">
+  <h1>Investment Ideas — Designed for Students & Young People</h1>
+  <p class="lead">You don't need to be rich to start investing. These ideas are organized by budget so you can find exactly what fits your situation. Every dollar you invest today is a seed for tomorrow's wealth.</p>
+
+  <div class="ideas-filter">
+    <button class="filter-btn active" data-filter="all">All Ideas</button>
+    <button class="filter-btn" data-filter="free">💡 No Money</button>
+    <button class="filter-btn" data-filter="small">💰 Small Budget</button>
+    <button class="filter-btn" data-filter="medium">💎 Medium Budget</button>
+  </div>
+
+  <!-- Free Section -->
+  <section class="ideas-section" data-budget="free">
+    <h2>💡 No Money Needed — Start Learning Today</h2>
+    <p class="section-desc">These ideas cost exactly $0. They build the knowledge foundation that makes every future investment smarter and more confident.</p>
+
+    <div class="ideas-grid">
+      <article class="idea-card">
+        <div class="idea-icon">📈</div>
+        <h3>Paper Trading Challenge</h3>
+        <div class="idea-meta"><span>Risk: None</span><span>Time: 4 weeks</span></div>
+        <p>Open a free stock simulation account. <strong>Investopedia Stock Simulator</strong>, <strong>Webull Paper Trading</strong>, or <strong>TradingView</strong> give you $100,000 in virtual cash to practice with real market data.</p>
+        <h4>Your Mission:</h4>
+        <ul>
+          <li>Pick 3 stocks of companies you use daily and buy shares</li>
+          <li>Track them for 30 days — compare returns to the S&P 500</li>
+          <li>Write a one-page report: what moved the prices? Earnings news? Product launches?</li>
+        </ul>
+        <div class="idea-ace">📐 ACE Math Link: Track daily percentage changes using (Current - Previous) / Previous × 100</div>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">💸</div>
+        <h3>Dividend Reinvestment Research Project</h3>
+        <div class="idea-meta"><span>Risk: None</span><span>Time: 1 year observation</span></div>
+        <p>Choose 5 dividend-paying companies and track what they would have earned. Focus on "Dividend Aristocrats" — companies that raised dividends for 25+ consecutive years:</p>
+        <ul>
+          <li><strong>Johnson & Johnson (JNJ):</strong> 61 consecutive years of raises. A $10,000 investment with DRIP in 1990 would be worth over $1 million today.</li>
+          <li><strong>Coca-Cola (KO):</strong> 62+ years. The dividend check literally grows every year.</li>
+          <li><strong>Procter & Gamble (PG):</strong> 68 years. Consumer staples always have demand.</li>
+        </ul>
+        <h4>Your Task:</h4>
+        <p>Calculate what $1,000 invested per year for 10 years at 7% dividend growth would be worth. Use the compound interest formula: A = P(1 + r)ⁿ</p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">📊</div>
+        <h3>Stock Analysis Challenge</h3>
+        <div class="idea-meta"><span>Risk: None</span><span>Time: 1 week per stock</span></div>
+        <p>Pick a company you genuinely use or are interested in. Read its investor relations page, annual report (Form 10-K on SEC.gov), and recent earnings call transcript.</p>
+        <h4>Your Investment Thesis Template:</h4>
+        <ul>
+          <li><strong>Bull case:</strong> Why might this stock go up 100% in 5 years?</li>
+          <li><strong>Bear case:</strong> What could go wrong? Who are competitors?</li>
+          <li><strong>Valuation:</strong> Is the P/E ratio (Price-to-Earnings) reasonable compared to peers?</li>
+          <li><strong>Verdict:</strong> Buy, Hold, or Sell — with your reasoning</li>
+        </ul>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">📓</div>
+        <h3>Investment Journal</h3>
+        <div class="idea-meta"><span>Risk: None</span><span>Time: 15 min/week</span></div>
+        <p>Start writing about market news every week. Summarize 3 financial news stories from sources like CNBC, Bloomberg, or Reuters. For each story, write:</p>
+        <ul>
+          <li>What happened (in your own words)</li>
+          <li>Why it matters to investors</li>
+          <li>Which sectors/stocks it affects and how</li>
+        </ul>
+        <div class="idea-ace">🌍 ACE Subject Link: This builds reading comprehension, analytical writing, and economic understanding — all tested in ACE exams!</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Small Budget Section -->
+  <section class="ideas-section" data-budget="small">
+    <h2>💰 Small Budget ($5–$50/month) — Invest What You Have</h2>
+    <p class="section-desc">Modern investing platforms let you start with just $1. The key isn't how much you start with — it's that you start and stay consistent.</p>
+
+    <div class="ideas-grid">
+      <article class="idea-card">
+        <div class="idea-icon">🧩</div>
+        <h3>Fractional Shares of S&P 500 ETFs</h3>
+        <div class="idea-meta"><span>Min: $1</span><span>Risk: Medium</span></div>
+        <p>Fractional shares let you own a piece of expensive assets with any dollar amount. One share of VOO costs ~$500+, but you can buy just $5 worth.</p>
+        <h4>How It Works:</h4>
+        <ul>
+          <li><strong>VOO (Vanguard S&P 500 ETF):</strong> Tracks the 500 largest US companies. Historical return: ~10% annually over long periods.</li>
+          <li><strong>VTI (Vanguard Total Stock Market):</strong> Even broader — 3,700+ US stocks in one ticker.</li>
+          <li><strong>VXUS (Vanguard Total International):</strong> Diversify beyond the US into Europe, Asia, emerging markets.</li>
+        </ul>
+        <p><strong>Power of consistency:</strong> $5/week ($20/month) into VOO at 10% annual return over 40 years = <strong>$287,000+</strong>. Most of that is growth, not contributions.</p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">📱</div>
+        <h3>Micro-Investing Apps — Spare Change Investing</h3>
+        <div class="idea-meta"><span>Min: $0.50</span><span>Risk: Medium</span></div>
+        <p>These apps round up your purchases to the nearest dollar and invest the difference:</p>
+        <ul>
+          <li><strong>Acorns:</strong> Round-ups automatically invest in a diversified portfolio. $3/month plan. Great for absolute beginners.</li>
+          <li><strong>Stash:</strong> Start with themed bundles (Tech, ESG, Dividends) from $5. Educational content included.</li>
+          <li><strong>Fidelity Go:</strong> No-fee robo-advisor. Set up auto-invest from your bank — even $25/month works.</li>
+        </ul>
+        <p><strong>Real example:</strong> If you buy a coffee for $4.75, Acorns rounds it to $5.00 and invests $0.25. Over a month, that "forgotten" change might total $30–$50 invested automatically.</p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">👥</div>
+        <h3>Peer-to-Peer Learning Investment Group</h3>
+        <div class="idea-meta"><span>Min: $5/month each</span><span>Risk: Medium</span></div>
+        <p>Gather 3–4 classmates. Each invests what you can ($5/month) into a shared learning portfolio.</p>
+        <h4>How to Run It:</h4>
+        <ul>
+          <li>Meet weekly for 30 minutes to discuss your picks</li>
+          <li>Each person researches one stock and presents findings</li>
+          <li>Vote on whether to buy, hold, or sell together</li>
+          <li>Track results as a group — compare against S&P 500 benchmark</li>
+        </ul>
+        <div class="idea-ace">🗣️ ACE English Link: Presenting investment theses builds public speaking and persuasive writing skills!</div>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">🏆</div>
+        <h3>Campus Investing Competition</h3>
+        <div class="idea-meta"><span>Risk: None</span><span>Prize: Cash/Experience</span></div>
+        <p>Many universities and organizations host investing competitions with real prize money:</p>
+        <ul>
+          <li><strong>CFA Institute Research Challenge:</strong> Teams of students analyze a company and present to professional analysts. Global competition.</li>
+          <li><strong>Stock Game by the National Association of Investors Corporation (NAIC):</strong> High school and college level virtual trading competitions with cash prizes.</li>
+          <li><strong>Wharton Investment Competition:</strong> Hosted by the University of Pennsylvania's top business school.</li>
+        </ul>
+        <p>These competitions look fantastic on university applications and your CV. Even losing teaches you more than any textbook chapter.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Medium Budget Section -->
+  <section class="ideas-section" data-budget="medium">
+    <h2>💎 Medium Budget ($50–$200/month) — Level Up Your Portfolio</h2>
+    <p class="section-desc">When you have consistent monthly investing power, it's time to build a real portfolio strategy. These ideas leverage your growing capital wisely.</p>
+
+    <div class="ideas-grid">
+      <article class="idea-card">
+        <div class="idea-icon">🧺</div>
+        <h3>Build Your First ETF Basket</h3>
+        <div class="idea-meta"><span>Min: $50/month</span><span>Risk: Medium-High</span></div>
+        <p>Create a diversified basket of ETFs — one ticker = instant diversification across hundreds or thousands of companies:</p>
+        <table class="ideas-table">
+          <thead>
+            <tr><th>Allocation</th><th>Ticker</th><th>What It Owns</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>40%</td><td><strong>VOO</strong></td><td>S&P 500 (500 US companies)</td><td>Core growth engine</td></tr>
+            <tr><td>20%</td><td><strong>VXUS</strong></td><td>Total International</td><td>Diversify geographically</td></tr>
+            <tr><td>20%</td><td><strong>QQQ</strong></td><td>Nasdaq-100 (Tech giants)</td><td>Growth acceleration</td></tr>
+            <tr><td>10%</td><td><strong>BND</strong></td><td>Total Bond Market</td><td>Stability, reduces volatility</td></tr>
+            <tr><td>10%</td><td><strong>Individual stocks</strong></td><td>Your research picks</td><td>Learning + potential alpha</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Monthly example ($200):</strong> $80 to VOO, $40 to VXUS, $40 to QQQ, $20 to BND, $20 to a stock you're researching. Rebalance every 3 months.</p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">🎓</div>
+        <h3>Education-Theme Investing</h3>
+        <div class="idea-meta"><span>Min: $50</span><span>Risk: Medium-High</span></div>
+        <p>Invest in companies related to your field of study. This connects your education directly to investing practice:</p>
+        <ul>
+          <li><strong>CS/Technology major:</strong> NVIDIA (NVDA), Microsoft (MSFT), Adobe (ADBE) — understand the tech you study daily</li>
+          <li><strong>Biology/Medical:</strong> Moderna (MRNA), Pfizer (PFE), Regeneron (REGN) — biotech innovation is fascinating to follow</li>
+          <li><strong>Business/Finance:</strong> JPMorgan (JPM), Visa (V), Mastercard (MA) — study your own industry</li>
+          <li><strong>Engineering:</strong> Tesla (TSLA), Boeing (BA), Caterpillar (CAT) — industrial innovation</li>
+        </ul>
+        <p><strong>Why this works:</strong> You already understand the sector better than most investors. That's called an "information advantage."</strong></p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">🔥</div>
+        <h3>Side-Hustle Investing Pipeline</h3>
+        <div class="idea-meta"><span>Min: $0 (start with skills)</span><span>Risk: Low</span></div>
+        <p>Use your talents to generate investment capital — the safest money you can invest because you earned it, not borrowed it:</p>
+        <ul>
+          <li><strong>Tutoring:</strong> ACE A-Level students tutoring younger students in Math/Physics/Econ. Charge $15–$30/hour.</li>
+          <li><strong>Freelance design/coding:</strong> Canva, Fiverr, Upwork for graphic design, web development, video editing.</li>
+          <li><strong>Content creation:</strong> YouTube channel about investing education. Even 100 subscribers generate learning value.</li>
+        </ul>
+        <p><strong>The pipeline rule:</strong> Route exactly 50% of side-hustle income to investments automatically. If you earn $200/month tutoring, invest $100/month without thinking about it.</p>
+      </article>
+
+      <article class="idea-card">
+        <div class="idea-icon">🏠</div>
+        <h3>REITs — Real Estate Without Buying Property</h3>
+        <div class="idea-meta"><span>Min: $50</span><span>Risk: Low-Medium</span></div>
+        <p>Real Estate Investment Trusts (REITs) let you own a piece of real estate portfolios and earn rental income distributions:</p>
+        <ul>
+          <li><strong>Realty Income (O):</strong> "The Monthly Dividend Company." Pays dividends every month, not quarterly. 900+ properties. 25+ years of consecutive increases.</li>
+          <li><strong>Vanguard REIT ETF (VNQ):</strong> Diversified real estate exposure across commercial, residential, and industrial properties in one ticker.</li>
+          <li><strong>American Tower (AMT):</strong> Owns cell towers worldwide. As long as people use phones, they pay rent to American Tower.</li>
+        </ul>
+        <p><strong>Why REITs for students:</strong> Real estate historically returns 8–12% annually with lower volatility than individual stocks. Plus REITs must distribute 90% of taxable income as dividends — you get paid just for owning them.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Your First Investment Checklist -->
+  <section class="checklist-section">
+    <h2>📋 Your First Investment Checklist</h2>
+    <p class="lead">Before investing real money, make sure you've completed these steps:</p>
+
+    <div class="checklist">
+      <label class="check-item"><input type="checkbox"> Completed at least 2 learning lessons above</label>
+      <label class="check-item"><input type="checkbox" id="chk-quiz"> Took the quiz to test your knowledge</label>
+      <label class="check-item"><input type="checkbox"> Opened a paper trading account (free, no risk)</label>
+      <label class="check-item"><input type="checkbox"> Saved $50 emergency fund in a separate account</label>
+      <label class="check-item"><input type="checkbox"> Chose one investment idea that excites you most</label>
+      <label class="check-item"><input type="checkbox" id="chk-auto"> Set up automatic monthly investing (even $5/month is powerful)</label>
+    </div>
+
+    <p class="challenge"><strong>🎯 Challenge:</strong> Complete all 6 steps above within the next 2 weeks. Come back and mark them done! The first investment you make doesn't need to be perfect — it needs to happen.</p>
+  </section>
+
+  <div class="disclaimer">
+    <p><strong>⚠️ Disclaimer:</strong> This content is for educational purposes only and does not constitute financial advice. All investments carry risk, including the loss of principal. Company names and tickers are examples for educational illustration. Always do your own research or consult a qualified financial advisor before making investment decisions.</p>
+  </div>
+</div>
