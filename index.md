@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home — InvestEd
-permalink: /index.html
+title: Home — InvestEd by Manasvi
+permalink: /
 ---
 
 <section class="hero">
