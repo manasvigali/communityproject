@@ -1,0 +1,2 @@
+# Local development override — empty baseurl so the site serves at / (no trailing slash needed)
+baseurl: ""
